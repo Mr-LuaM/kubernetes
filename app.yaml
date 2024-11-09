@@ -5,12 +5,13 @@ metadata:
   labels:
     app: nginx
 spec:
-  type: LoadBalancer  
+  type: NodePort  # Change from LoadBalancer to NodePort
   selector:
     app: nginx
   ports:
     - port: 80
       targetPort: 80
+      nodePort: 30080  # Specify the NodePort (can be any port from 30000-32767 range)
 
 ---
 apiVersion: apps/v1
