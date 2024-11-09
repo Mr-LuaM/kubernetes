@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Lua</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+      
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #333;
+        }
+
+       
+        .name-container {
+            text-align: center;
+            padding: 40px 60px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(0);
+            transition: all 0.3s ease-in-out;
+        }
+
+      
+        .name-container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+
+        .name {
+            font-size: 3em;
+            color: #2c3e50;
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+     
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        
+        .decorative-line {
+            width: 60px;
+            height: 5px;
+            background-color: #3498db;
+            margin: 20px auto;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="name-container">
+        <div class="name">Mark Lua</div>
+        <div class="decorative-line"></div>
+        <div class="subtitle">Welcome to my kubernetes application</div>
+    </div>
+</body>
+</html>
